@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>StockNes</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main_page.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<header id="head">
+		<div id="logo">
+			<a href="#" title="Главная">
+				<span >StockNews</span>
+			</a>
+		</div>
+		<div id="weather">
+			Минск +20, облачно
+		</div>
+		<div id="reg_auth">
+			<a href="#" title="Вход">
+				<div class="btn">Войти</div>
+			</a>
+			<a href="#" title="Регистрация на сайте">
+				<div class="btn">Регистрация</div>
+			</a>
+		</div>
+	</header>
+	<nav>
+		<div id="menuShow"><i class="fa fa-bars" aria-hiddeb="true"></i></div>
+		<div id="hideMenu">
+			<a href="#">Политика</a>
+			<a href="#">Экономика</a>
+			<a href="#">Технологии</a>
+			<a href="#">Искусство</a>
+			<a href="#">Еда</a>
+			<a href="#">Кино</a>
+			<a href="#">Музыка</a>
+		</div>
+		<div id="mobileMenu">
+			<a href="#">Политика</a><br>
+			<a href="#">Экономика</a><br>
+			<a href="#">Технологии</a><br>
+			<a href="#">Искусство</a><br>
+			<a href="#">Еда</a><br>
+			<a href="#">Музыка</a><br>
+			<hr>
+			<a href="#">Войти</a>
+			<a href="#">Регистрация</a>
+		</div>
+	</nav>
+	
+	<div id="main">
+		<div id="news">
+			<h2 class="heading"><span>Главные</span> новости</h2>
+			<div style="clear: both;"><br></div>
+			
+			<script type="text/javascript">
+				var i;
+				for (i = 0; i < 10; i++){
+					document.write(
+						'<div class="article">'+'<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFAvQ453iL40e8SsoBaXUzzuEzOn6dcphGVwAQhfdS4Zke5Xv7" alt="Image">'+'<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam tempore, dicta ad saepe quis unde.</span>'+'<a href="#" title="Вход">'+'<div class="btn">Читать</div>'+'</a>'+'</div>'
+					);
+				}
+			</script>
+
+		</div>
+	</div>
+	<aside>
+		<div id="courses">
+			<h2 class="heading">Заголовок</h2>
+			<div style="clear: both;"><br></div>
+		</div>
+	</aside>	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

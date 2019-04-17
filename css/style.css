@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Raleway:400,500');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	width: 100%;
+}
+
+a {
+	color: #b7bcff;
+	text-decoration: none;
+	transition: all.5s ease;
+	-o-transition: all.5s ease;
+	-ms-transition: all.5s ease;
+	-moz-transition: all.5s ease;
+}
+
+a:hover {
+	color: #0f1899;
+	text-decoration: none;
+	transition: all.5s ease;
+	-o-transition: all.5s ease;
+	-ms-transition: all.5s ease;
+	-moz-transition: all.5s ease;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid silver;
+	margin: 1em 0;
+}
+
+/*_______________________шапка_________________________*/
+header {
+	float: left;
+	display: inline;
+	background-color: #eff0ff;
+	width: 99.4%;
+	padding: 0.3%;
+	color: #262626;
+
+}
+
+header>div#logo>a>span {
+	color: #262626;
+	font-size: 35px;
+	margin-left: 10px;
+	font-family: 'Raleway', sans-serif;
+}
+/*____________________Адаптивность____________________*/
+@media (min-width: 950px){
+	#logo {
+		float: left;
+		width: 30%;
+	}
+
+	#weather {
+		float: left;
+		width: 37%;
+	}
+
+	#reg_auth {
+		float: right;
+		width: 30%;
+	}
+}
+
+@media (max-width: 949px) and (min-width: 927px){
+	#logo {
+		float: left;
+		width: 30%;
+	}
+
+	#weather {
+		visibility: hidden;
+		display: none;
+	}
+
+	#reg_auth {
+		float: right;
+		width: 30%;
+	}
+}
+
+@media (max-width: 926px){
+	#logo {
+		margin-left: 40%;
+		float: center;
+		width: 30%;
+	}
+
+	#weather {
+		visibility: hidden;
+		display: none;
+	}
+
+	#reg_auth {
+		visibility: hidden;
+		display: none;
+	}
+}
+/*_______________________________________*/
+
+#weather {
+	text-align: center;
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+#reg_auth a {
+	color: white;
+}
+
+.btn {
+	float: right;
+	color: #fff;
+	margin-right: 3%;
+	margin-top: 3px;
+	font-size: 12px;
+	padding: 10px 20px;
+	background-color: #0f1899;
+}
+
+.btn:hover {
+	margin-top: 1px;
+	background-color: #2f39ce;
+	transition: all.4s ease;
+	-o-transition: all.4s ease;
+	-ms-transition: all.4s ease;
+	-moz-transition: all.4s ease;
+}
+
+.fixed {
+	position: fixed;
+	top: 0px;
+	background-color: #fff;
+	opacity: 0.97;
+}
+/*_____________________конец шапки_________________________*/
+
+
+/*________________________Меню сайта_______________________*/
+nav {
+	font-family: 'Montserrat', sans-serif;
+	width: 99.4%;
+	padding: 0.3%;
+	float: left;
+	border-bottom: 2px solid #eff0ff;
+}
+
+nav a {
+	font-size: 16px;
+	margin: 2%;
+}
+
+#hideMenu {
+	display: inline;
+	display: block;
+	text-align: center;
+}
+
+
+#mobileMenu {
+	display: none;
+	width: 100%;
+	float: left;
+}
+
+#menuShow{
+	display: inline;
+	font-size: 20px;
+	margin-left: 20px;
+	float: left;
+	margin-top: 1px;
+	cursor: pointer;
+}
+
+@media (min-width: 927px){
+	#menuShow {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 926px){
+	#hideMenu {
+		display: none;
+		visibility: hidden;
+	}
+}
+/*_____________________Конец меню сайта_____________________*/
